@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Distribution Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Distribution Platform</h1>
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <form id="metadataForm" style="display: none;">
+            <h2>Music Metadata</h2>
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required>
+            <label for="songTitle">Song Title:</label>
+            <input type="text" id="songTitle" name="songTitle" required>
+            <label for="album">Album:</label>
+            <input type="text" id="album" name="album" required>
+            <button type="submit">Generate Upload Links</button>
+        </form>
+        
+        <div id="links" style="display: none;">
+            <h2>Upload Links</h2>
+            <ul id="linkList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
